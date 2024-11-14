@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>Borrar</title>
+<style>
+	body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f6ddcc; /* Fondo claro y neutro */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #17202a; /* Color oscuro */
+            margin-top: 20px;
+            font-size: 2.5em;
+            text-align: center;
+        }
+        table {
+            margin: 40px auto;
+            border-collapse: collapse;
+            width: 50%;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        }
+        td {
+            padding: 15px;
+            background-color: #d5f5e3; /* Fondo blanco */
+            text-align: center;
+            border: 1px solid #d7bde2; /* Borde claro */
+            transition: background-color 0.3s;
+        }
+        td:hover {
+            background-color: #f5eef8; /* Color gris claro al pasar el mouse */
+        }
+        a {
+            text-decoration: none;
+            color: #d7bde2; /* Color azul para los enlaces */
+            font-weight: bold;
+            font-size: 1.1em; /* Tamaño de fuente moderado */
+        }
+        a:hover {
+            color: #c39bd3; /* Color más oscuro al pasar el mouse */
+        }
+        .button {
+            display: inline-block;
+            margin: 20px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white; /* Color del texto del botón */
+            background-color: #48c9b0; /* Color de fondo del botón */
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.2em; /* Tamaño de fuente del botón */
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .button:hover {
+            background-color: #2980b9; /* Color más oscuro al pasar el mouse */
+            transform: scale(1.05); /* Efecto de escalado */
+        }
+</style>
+</head>
+<body>
+<h2 align="center">Borrar</h2>
+<form name="Formulario" method="post" action="Eliminar2.php">
+<table border="1" align="center">
+<tr><td>ID_Pedido</td>
+<td><input type="text" name="ID_Pedido"></td>
+</tr>
+</table>
+<br><br><center><input type="submit" name="" value="Borrar"></center>
+</form>
+</body>
+</html>

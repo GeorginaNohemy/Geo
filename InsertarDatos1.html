@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Insertar</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f6ddcc; /* Fondo claro y neutro */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #17202a; /* Color oscuro */
+            margin-top: 20px;
+            font-size: 2.5em;
+            text-align: center;
+        }
+        table {
+            margin: 40px auto;
+            border-collapse: collapse;
+            width: 70%;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        }
+        th, td {
+            padding: 15px;
+            background-color: #d5f5e3; /* Fondo blanco */
+            text-align: center;
+            border: 1px solid #d7bde2; /* Borde claro */
+            transition: background-color 0.3s;
+        }
+        td:hover {
+            background-color: #f5eef8; /* Color gris claro al pasar el mouse */
+        }
+        th {
+            background-color: #a9dfbf; /* Fondo diferente para encabezados */
+            color: #17202a; /* Color de texto oscuro */
+        }
+        a {
+            display: inline-block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white; /* Color del texto del botón */
+            background-color: #48c9b0; /* Color de fondo del botón */
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.2em; /* Tamaño de fuente moderado */
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        a:hover {
+            background-color: #2980b9; /* Color más oscuro al pasar el mouse */
+            transform: scale(1.05); /* Efecto de escalado */
+        }
+    </style>
+</head>
+<body>
+    <h1>Insertar Datos</h1>
+    <form action="InsertarDatos1.php" method="post">
+        <table>
+            <tr>
+                <td>Id Pedido</td>
+                <td><input type="text" name="ID_Pedido"></td>
+            </tr>
+            <tr>
+                <td>ID Cliente</td>
+                <td><input type="text" name="ID_Ciente"></td>
+            </tr>
+            <tr>
+                <td>ID Proveedor</td>
+                <td><input type="text" name="ID_Provedor"></td>
+            </tr>
+            <tr>
+                <td>ID Facturas</td>
+                <td><input type="text" name="ID_Facturas"></td>
+            </tr>
+            <tr><td colspan="2"><input type="submit" value="Grabar">
+        </table>
+        <div style="text-align: center;">
+            <a href='MenudeRegistros.html' class='button'>Menú Principal</a>
+        </div>
+    </form>
+</body>
+</html>
